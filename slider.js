@@ -1,4 +1,4 @@
-!function () {
+!function (context) {
 	// Responsive slider for ender
 	// ===========================
 	
@@ -192,6 +192,7 @@
 		}
 	}
 	
-	(typeof exports !== 'undefined') ? exports.Slider = Slider : window.Slider = Slider;
+	if (typeof exports !== 'undefined') exports.Slider = Slider
+	else window.Slider = Slider
 	
-}()
+}(this)
