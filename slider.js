@@ -1,4 +1,4 @@
-!(function(){
+!function (context) {
 	// Responsive slider for ender
 	// ===========================
 	
@@ -185,4 +185,4 @@
 			slideTo : function(eq){ slider.slideTo(eq) }
 		}
 	}
-})(ender)
+}(this)

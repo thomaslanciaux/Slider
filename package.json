@@ -1,0 +1,16 @@
+{
+  "name": "slider",
+  "description": "responsive slider for ender",
+  "version": "1.0.0",
+  "homepage": "https://github.com/thomaslanciaux/Slider",
+  "authors": ["Thomas Lanciaux"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thomaslanciaux/Slider.git"
+  },
+  "dependencies": {
+    "klass": "*"
+  },
+  "main": "./slider.js",
+  "ender": "./ender.js"
+}
