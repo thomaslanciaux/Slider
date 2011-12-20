@@ -1,11 +1,11 @@
-!function ($) {
+!function ($, slider) {
 	
 	$.ender({
 		slider: function (opts) {
 			return this.forEach(function (el) {
-				return new Slider(el, opts)
+				return Slider(el, opts)
 			})
 		}
 	}, true)
 	
-}(ender);
+}(ender, require('slider').slider);

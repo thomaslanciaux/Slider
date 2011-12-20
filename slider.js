@@ -191,4 +191,7 @@
 			slideTo : function(eq){ slider.slideTo(eq) }
 		}
 	}
+	
+	if (typeof exports !== 'undefined') ? exports.Slider = Slider : window.Slider = Slider
+	
 }(this)
