@@ -192,6 +192,6 @@
 		}
 	}
 	
-	if (typeof exports !== 'undefined') ? exports.Slider = Slider : window.Slider = Slider
+	(typeof exports !== 'undefined') ? exports.Slider = Slider : window.Slider = Slider
 	
 }(this)
