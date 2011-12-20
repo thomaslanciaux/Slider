@@ -9,7 +9,7 @@
 		obj.options = {
 			auto : false,
 			paginate : false
-		}
+		};
 		
 		// Set custom options
 		for (i in options) obj.options[i] = options[i];
