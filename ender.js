@@ -2,9 +2,7 @@
 	
 	$.ender({
 		slider: function (opts) {
-			return this.forEach(function (el) {
-				Slider(el, opts)
-			})
+			return Slider(this, opts)
 		}
 	}, true)
 	
