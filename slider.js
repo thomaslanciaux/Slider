@@ -100,7 +100,6 @@
 				slider.animate({
 					left: '-'+slideOffset,
 					duration: 500,
-					easing: easings.easeOut,
 					complete : function(){ 
 						current = slideEq
 						animated = false
