@@ -17,8 +17,8 @@
 		// Globals
 		var slider = $(el).children(),
 			wrapper = $('<div class="slider_wrap" />'),
-			next = $('<input type="button" class="next" value="Next">'),
-			prev = $('<input type="button" class="previous" value="Previous">'),
+			next = $('<input type="button" class="btn next" value="Next">'),
+			prev = $('<input type="button" class="btn previous" value="Previous">'),
 			pageLinks = [],
 			dims = {},
 			current = 1,
@@ -68,9 +68,9 @@
 					setActive : function(){
 						$(pageLinks).each(function(){
 							var that = this
-							that.removeClass('slideActive')
+							that.removeClass('slide_active')
 						})
-						link.addClass('slideActive')
+						link.addClass('slide_active')
 					}
 				})
 			})
@@ -113,8 +113,8 @@
 		$([next, prev]).each(function(){
 			var btn = $(this)
 			btn.bind({
-				disable : function(){ btn.addClass('buttonDisabled') },
-				enable : function(){ btn.removeClass('buttonDisabled') }
+				disable : function(){ btn.addClass('btn_disabled') },
+				enable : function(){ btn.removeClass('btn_disabled') }
 			})
 		})
 		
