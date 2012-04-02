@@ -99,7 +99,7 @@
 			if (!animated) {
 				animated = true
 				slider.animate({
-					left: '-'+slideOffset+'px',
+					left: '-='+slideOffset+'px',
 					duration: 500,
 					complete : function(){ 
 						current = slideEq
