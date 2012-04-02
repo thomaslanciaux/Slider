@@ -91,27 +91,23 @@
 		}
 		
 		// Slide to the requested occurence
-		slider.slideTo = function(slideEq){
-			var slideOffset = dims.slideW*(slideEq-1)
-			
-			
-			slider.checkState(slideEq)
-			if (!animated) {
-				animated = true
-				leftAnim = '-'+slideOffset+'px'
-				slider.animate({
-					left: leftAnim,
+  		slider.slideTo = function(slideEq){
+  			var slideOffset = dims.slideW*(slideEq-1)
+  			slider.checkState(slideEq)
+  			if (!animated) {
+  				animated = true	
+				emile(slider[0], 'left:-'+slideOffset+'px', { 
 					duration: 500,
-					complete : function(){ 
-						current = slideEq
-						animated = false
-					}
+					after : function(){
+  						current = slideEq
+  						animated = false
+  					}
 				})
-				current = slideEq
-				animated = false
-			}
-			
-		}
+				
+  				current = slideEq
+  				animated = false
+  			}
+  		}
 		
 		// Binds on prev/next buttons
 		$([next, prev]).each(function(){
