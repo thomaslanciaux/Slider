@@ -94,17 +94,20 @@
 		slider.slideTo = function(slideEq){
 			var slideOffset = dims.slideW*(slideEq-1)
 			
+			
 			slider.checkState(slideEq)
 			if (!animated) {
 				animated = true
 				slider.animate({
-					left: '-'+slideOffset,
+					left: '-'+slideOffset+'px',
 					duration: 500,
 					complete : function(){ 
 						current = slideEq
 						animated = false
 					}
-				})	
+				})
+				current = slideEq
+				animated = false
 			}
 			
 		}
