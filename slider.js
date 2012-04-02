@@ -98,8 +98,9 @@
 			slider.checkState(slideEq)
 			if (!animated) {
 				animated = true
+				leftAnim = '-'+slideOffset+'px'
 				slider.animate({
-					left: '-='+slideOffset+'px',
+					left: leftAnim,
 					duration: 500,
 					complete : function(){ 
 						current = slideEq
