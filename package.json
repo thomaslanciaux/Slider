@@ -12,7 +12,7 @@
   },
   "dependencies":{
     "jeesh": "*",
-	"emile": "*"
+    "emile": "*"
   },
   "main": "./slider.js",
   "ender": "./ender.js",
