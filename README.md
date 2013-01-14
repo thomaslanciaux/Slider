@@ -1,1 +1,1 @@
-A light and responsive slider module for ender, requires jeesh and morpheus 
+A light and responsive slider module for ender, requires jeesh and emile.
